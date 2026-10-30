@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Major Topics - Educational Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .topic-card {
+            border: 2px solid #bdc3c7;
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .topic-card h3 {
+            color: #34495e;
+            margin-top: 0;
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .topic-card p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        .topic-card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .topic-card a:hover {
+            text-decoration: underline;
+        }
+
+        .intro-section {
+            background-color: #ecf0f1;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .intro-section h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Four Major Topics - Educational Portal</h1>
+        <p>Explore philosophy, artificial intelligence, quantum mechanics, and Shakespeare</p>
+    </header>
+
+    <div class="container">
+        <div class="intro-section">
+            <h2>Welcome</h2>
+            <p>Explore four fundamental areas of human knowledge and inquiry. Use the navigation links or topic cards below to learn more about each field.</p>
+        </div>
+
+        <div class="topic-grid">
+            <div class="topic-card" id="philosophy">
+                <h3>Philosophy</h2>
+                <p>Philosophy is a systematic study of general and fundamental questions concerning topics like existence, knowledge, mind, reason, language, and value. It is a rational and critical inquiry that reflects on its methods and assumptions.</p>
+                <a href="#philosophy-detail">Learn More</a>
+            </div>
+
+            <div class="topic-card" id="ai">
+                <h3>Artificial Intelligence</h3>
+                <p>Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making.</p>
+                <a href="#ai-detail">Learn More</a>
+            </div>
+
+            <div class="topic-card" id="quantum">
+                <h3>Quantum Mechanics</h3>
+                <p>Quantum mechanics, also known as quantum physics, is the fundamental physical theory that describes the behavior of matter and of light at and below the scale of atoms, with behaviors typically described as counterintuitive.</p>
+                <a href="#quantum-detail">Learn More</a>
+            </div>
+
+            <div class="topic-card" id="shakespeare">
+                <h3>William Shakespeare</h3>
+                <p>William Shakespeare was an English playwright, poet and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.</p>
+                <a href="#shakespeare-detail">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail sections -->
+    <section id="philosophy-detail" style="max-width: 800px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+        <h2>Philosophy</h2>
+        <p>Philosophy is a systematic study of general and fundamental questions concerning topics like existence, knowledge, mind, reason, language, and value. It is a rational and critical inquiry that reflects on its methods and assumptions. Philosophical investigations span across disciplines including epistemics, logic, ethics, aesthetics, and metaphysics, seeking deep understanding of the nature of reality and human experience.</p>
+    </section>
+
+    <section id="ai-detail" style="max-width: 800px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+        <h2>Artificial Intelligence</h2>
+        <p>Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is also a field of research spanning computer science, engineering, and mathematics. AI research has enabled technologies like machine learning, neural networks, and natural language processing that power many modern applications.</p>
+    </section>
+
+    <section id="quantum-detail" style="max-width: 800px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+        <h2>Quantum Mechanics</h2>
+        <p>Quantum mechanics, also known as quantum physics, is the fundamental physical theory that describes the behavior of matter and of light; the behaviors it models typically occur at and below the scale of atoms, and have often been described as counterintuitive. Its concepts and methods have been applied successfully across many fields including quantum chemistry, quantum computing, and quantum cryptography.</p>
+    </section>
+
+    <section id="shakespeare-detail" style="max-width: 800px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
+        <h2>William Shakespeare</h2>
+        <p>William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the "Bard of Avon" or simply "the Bard". His extant works, including collaborations, consist of about 38 plays, 154 sonnets, two long narrative poems, and a few other verses, performed in theaters worldwide.</p>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9em;">
+        &copy; 2024 Educational Portal | Four Major Topics
+    </footer>
+
+</body>
+</html>
